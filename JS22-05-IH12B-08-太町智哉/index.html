@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>岡崎ぶらりマップ</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="top">
+        <h1>岡崎ぶらりマップ</h1>
+        <p class="top__text">
+          家康公ゆかりの場所を中心に、岡崎の見どころを地図でまとめました。
+        </p>
+      </header>
+
+      <section class="map-wrap">
+        <h2>地図</h2>
+        <p class="hint">ピンを押すと写真つきの説明が出ます。</p>
+        <div id="map"></div>
+      </section>
+
+      <section class="photos">
+        <h2>写真一覧</h2>
+        <table class="photo-table">
+          <thead>
+            <tr>
+              <th>写真</th>
+              <th>名前</th>
+              <th>ひとこと</th>
+            </tr>
+          </thead>
+          <tbody id="photo-tbody"></tbody>
+        </table>
+      </section>
+
+      <footer>
+        <p>
+          copyright &copy; <script>new Date().getFullYear() > 2000 && document.write("" + new Date().getFullYear());</script> OomatiTomoya. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAKLjisxFelKwIl1_G6MiEO9-ya7Twr5s&callback=initMap&language=ja"
+    ></script>
+  </body>
+</html>
